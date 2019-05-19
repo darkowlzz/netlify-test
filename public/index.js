@@ -4,7 +4,6 @@ $(document).ready(function () {
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
 
-  dataURL = "config2.json"
   fetch(dataURL)
     .then(function (response) { return response.json(); })
     .then(function (data) {
