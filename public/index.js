@@ -1,12 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
   var modal = document.getElementById('myModal');
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
 
+  dataURL = "config2.json"
   fetch(dataURL)
-    .then(function(response) { return response.json(); })
-    .then(function(data) {
+    .then(function (response) { return response.json(); })
+    .then(function (data) {
 
       // Set page title.
       document.title = data["title"]
@@ -26,7 +27,7 @@ $(document).ready(function() {
         category = catalog[catIndex]
 
         var categoryTemplate = $("#list-category-hb").html()
-        var categoryTemplateScript = Handlebars.compile(categoryTemplate, {noEscape: true})
+        var categoryTemplateScript = Handlebars.compile(categoryTemplate, { noEscape: true })
         categoryHtml = categoryTemplateScript(category)
         $("#listing").append(categoryHtml)
       }
@@ -40,8 +41,8 @@ $(document).ready(function() {
 
       // Add click event on all the images for preview.
       var imgs = $(".card-img-top")
-      imgs.each(function() {
-        $(this).click(function() {
+      imgs.each(function () {
+        $(this).click(function () {
           modal.style.display = "block"
           modalImg.src = this.src
           captionText.innerHTML = this.alt
@@ -53,7 +54,7 @@ $(document).ready(function() {
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
+  span.onclick = function () {
     modal.style.display = "none";
   }
 })
