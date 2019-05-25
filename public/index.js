@@ -3,8 +3,9 @@ $(document).ready(function () {
   var modal = document.getElementById('myModal');
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
+  var configURL = "config.json"
 
-  fetch(dataURL)
+  fetch(configURL)
     .then(function (response) { return response.json(); })
     .then(function (data) {
 
@@ -19,34 +20,14 @@ $(document).ready(function () {
       $("#jumbo").css("background", data["primary-background"])
       $("body").css("background", data["secondary-background"])
 
-      // Iterate through the catalog and create entries for all the items per
-      // category.
-      catalog = data["catalog"]
-      for (var catIndex = 0; catIndex < catalog.length; catIndex++) {
-        category = catalog[catIndex]
-
-        var categoryTemplate = $("#list-category-hb").html()
-        var categoryTemplateScript = Handlebars.compile(categoryTemplate, { noEscape: true })
-        categoryHtml = categoryTemplateScript(category)
-        $("#listing").append(categoryHtml)
-      }
-
       // Footer
       var footerTemplate = $("#footer-hb").html()
       var footerTemplateScript = Handlebars.compile(footerTemplate)
       footerHtml = footerTemplateScript(data)
-      console.log("FOOTER:", footerHtml)
       $("#footer").append(footerHtml)
 
-      // Add click event on all the images for preview.
-      var imgs = $(".card-img-top")
-      imgs.each(function () {
-        $(this).click(function () {
-          modal.style.display = "block"
-          modalImg.src = this.src
-          captionText.innerHTML = this.alt
-        })
-      })
+      // Build the body with catalog data.
+      buildCatalog(data)
     });
 
   // Get the <span> element that closes the modal
@@ -57,3 +38,34 @@ $(document).ready(function () {
     modal.style.display = "none";
   }
 })
+
+function buildCatalog(data) {
+  // Iterate through the catalog and create entries for all the items per
+  // category.
+  catalog = data["catalog"]
+  for (var catIndex = 0; catIndex < catalog.length; catIndex++) {
+    category = catalog[catIndex]
+    catDataURL = category['dataURL']
+
+    // Fetch category data.
+    fetch(catDataURL)
+      .then(function (response) { return response.json(); })
+      .then(function (categoryData) {
+        var categoryTemplate = $("#list-category-hb").html()
+        var categoryTemplateScript = Handlebars.compile(categoryTemplate, { noEscape: true })
+        categoryHtml = categoryTemplateScript(categoryData)
+        $("#listing").append(categoryHtml)
+      });
+  }
+
+  // Add click event on all the images for preview.
+  var imgs = $(".card-img-top")
+  imgs.each(function () {
+    $(this).click(function () {
+      modal.style.display = "block"
+      modalImg.src = this.src
+      captionText.innerHTML = this.alt
+    })
+  })
+
+}
