@@ -90,11 +90,6 @@
                     "name": "Holes",
                     "link": "https://holes.darkowlzz.space",
                     "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png"
-                },
-                {
-                    "name": "Twitch",
-                    "link": "https://twitch.com/darkowlzz",
-                    "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Combo_Purple_RGB.png"
                 }
             ]
         },
