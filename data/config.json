@@ -1,109 +1,115 @@
 {
-  "siteType": "HOME",
-  "title": "DarkHoles",
-  "title-lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "title-sublead": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
-  "title-logo": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png",
-  "primary-background": "#f2f5f7",
-  "secondary-background": "black",
-  "personal": [
-    {
-      "name": "Shop",
-      "link": "https://holes.darkowlzz.space",
-      "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png"
+    "siteType": "HOME",
+    "title": "DarkHoles",
+    "title-lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "title-sublead": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+    "title-logo": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png",
+    "primary-background": "#f2f5f7",
+    "secondary-background": "black",
+    "personal": {
+        "title": "Personal Sites",
+        "items": [
+            {
+                "name": "Shop",
+                "link": "https://holes.darkowlzz.space",
+                "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png"
+            },
+            {
+                "name": "Calendar",
+                "link": "https://holes-home.darkowlzz.space",
+                "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png"
+            }
+        ]
     },
-    {
-      "name": "Calendar",
-      "link": "https://holes-home.darkowlzz.space",
-      "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png"
-    }
-  ],
-  "social": [
-    {
-      "name": "Red Bubble",
-      "link": "https://holes-home.darkowlzz.space/",
-      "image": "https://raw.githubusercontent.com/purdynerdy/artpics/master/logo/redbubble.png"
+    "social": {
+        "title": "Socials",
+        "items": [
+            {
+                "name": "Red Bubble",
+                "link": "https://holes-home.darkowlzz.space/",
+                "image": "https://raw.githubusercontent.com/purdynerdy/artpics/master/logo/redbubble.png"
+            },
+            {
+                "name": "Instagram",
+                "link": "https://holes-home.darkowlzz.space/",
+                "image": "https://raw.githubusercontent.com/purdynerdy/artpics/master/logo/instagram.png"
+            },
+            {
+                "name": "Twitter",
+                "link": "https://holes-home.darkowlzz.space/",
+                "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Twitter_Logo_Blue.png"
+            },
+            {
+                "name": "Twitch",
+                "link": "https://holes-home.darkowlzz.space/",
+                "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Combo_Purple_RGB.png"
+            }
+        ]
     },
-    {
-      "name": "Instagram",
-      "link": "https://holes-home.darkowlzz.space/",
-      "image": "https://raw.githubusercontent.com/purdynerdy/artpics/master/logo/instagram.png"
-    },
-    {
-      "name": "Twitter",
-      "link": "https://holes-home.darkowlzz.space/",
-      "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Twitter_Logo_Blue.png"
-    },
-    {
-      "name": "Twitch",
-      "link": "https://holes-home.darkowlzz.space/",
-      "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Combo_Purple_RGB.png"
-    }
-  ],
-  "info": [
-    {
-      "title": "Other Pages",
-      "items": [
+    "info": [
         {
-          "name": "Gaming",
-          "link": ""
+            "title": "Other Pages",
+            "items": [
+                {
+                    "name": "Gaming",
+                    "link": ""
+                },
+                {
+                    "name": "Music",
+                    "link": ""
+                },
+                {
+                    "name": "Books",
+                    "link": ""
+                },
+                {
+                    "name": "Thoughts",
+                    "link": ""
+                }
+            ]
         },
         {
-          "name": "Music",
-          "link": ""
+            "title": "Social",
+            "items": [
+                {
+                    "name": "Twitter",
+                    "link": "https://twitter.com/darkowlzz",
+                    "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Twitter_Logo_Blue.png"
+                },
+                {
+                    "name": "Discord",
+                    "link": "https://discordapp.com",
+                    "image": "https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png"
+                },
+                {
+                    "name": "Twitch",
+                    "link": "https://twitch.com/darkowlzz",
+                    "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Combo_Purple_RGB.png"
+                },
+                {
+                    "name": "Holes",
+                    "link": "https://holes.darkowlzz.space",
+                    "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png"
+                },
+                {
+                    "name": "Twitch",
+                    "link": "https://twitch.com/darkowlzz",
+                    "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Combo_Purple_RGB.png"
+                }
+            ]
         },
         {
-          "name": "Books",
-          "link": ""
-        },
-        {
-          "name": "Thoughts",
-          "link": ""
+            "title": "About",
+            "items": [
+                {
+                    "name": "Privacy",
+                    "link": ""
+                },
+                {
+                    "name": "Terms",
+                    "link": ""
+                }
+            ]
         }
-      ]
-    },
-    {
-      "title": "Social",
-      "items": [
-        {
-          "name": "Twitter",
-          "link": "https://twitter.com/darkowlzz",
-          "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Twitter_Logo_Blue.png"
-        },
-        {
-          "name": "Discord",
-          "link": "https://discordapp.com",
-          "image": "https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png"
-        },
-        {
-          "name": "Twitch",
-          "link": "https://twitch.com/darkowlzz",
-          "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Combo_Purple_RGB.png"
-        },
-        {
-          "name": "Holes",
-          "link": "https://holes.darkowlzz.space",
-          "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/face.png"
-        },
-        {
-          "name": "Twitch",
-          "link": "https://twitch.com/darkowlzz",
-          "image": "https://raw.githubusercontent.com/darkowlzz/netlify-test/data/static/Combo_Purple_RGB.png"
-        }
-      ]
-    },
-    {
-      "title": "About",
-      "items": [
-        {
-          "name": "Privacy",
-          "link": ""
-        },
-        {
-          "name": "Terms",
-          "link": ""
-        }
-      ]
-    }
-  ]
+    ]
 }
